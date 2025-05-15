@@ -2,11 +2,11 @@ import keras
 
 
 def generate_Model(inputShape,filter_size,pool_size,pool_stride):
-    insert = keras.layers.Conv2D(inputShape,kernel_size=filter_size,activation="relu")(input)
+    insert = keras.layers.Input(shape=(inputShape[0],inputShape[1],inputShape[2]))
     output=0
     # TODO: layer size Berechnen
     # Conv Layer 1
-    output = keras.layers.Conv2D(8,kernel_size=filter_size,activation="relu")(output)
+    output = keras.layers.Conv2D(8,kernel_size=filter_size,activation="relu")(insert)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     #Conv Layer 2
     output = keras.layers.Conv2D(12,kernel_size=filter_size,activation="relu")(output)
@@ -21,9 +21,9 @@ def generate_Model(inputShape,filter_size,pool_size,pool_stride):
     output = keras.layers.Conv2D(40,kernel_size=filter_size,activation="relu")(output)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     
-    output = keras.layers.Flatten()
+    output = keras.layers.Flatten()(output)
     #Dense Layer 1
-    output = keras.layers.Dense(inputShape[1]*inputShape[0]*40,activation="relu")(output)
+    output = keras.layers.Dense(units=inputShape[1]*inputShape[0]*40,activation="relu")(output)
     #Dense Layer 2
     output = keras.layers.Dense(29,activation="relu")(output)
     return keras.Model(insert,output)
@@ -38,3 +38,12 @@ def generate_Model_no_pool(inputShape,cov_layers,dens_layers,filter_size):
     for i in range(0,dens_layers):
         output = keras.layers.Dense(0,activation="relu")(output)
     return keras.Model(insert,output)
+
+def compile_Model(model):
+    model.compile(
+        optimizer=keras.optimizers.Adam(1e-2),
+        loss=keras.losses.sparse_categorical_crossentropy,
+        metrics=["accuracy"],
+
+    )
+    return model
