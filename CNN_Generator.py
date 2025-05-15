@@ -23,7 +23,7 @@ def generate_Model(inputShape,filter_size,pool_size,pool_stride):
     
     output = keras.layers.Flatten()(output)
     #Dense Layer 1
-    output = keras.layers.Dense(units=inputShape[1]*inputShape[0]*40,activation="relu")(output)
+    output = keras.layers.Dense(units=inputShape[1]*inputShape[0]*40//(pool_size[0]*pool_size[1]*5),activation="relu")(output)
     #Dense Layer 2
     output = keras.layers.Dense(29,activation="relu")(output)
     return keras.Model(insert,output)
