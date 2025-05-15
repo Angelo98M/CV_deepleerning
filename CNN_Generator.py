@@ -1,5 +1,6 @@
 import keras
 
+
 def generate_Model(inputShape,filter_size,pool_size,pool_stride):
     insert = keras.layers.Conv2D(inputShape,kernel_size=filter_size,activation="relu")(input)
     output=0
