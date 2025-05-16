@@ -12,9 +12,10 @@ def main():
     history = model.fit(
         train_ds,
         validation_data=val_ds,
-        epochs=100
+        epochs=30
     )
     plot(history)
+    Read_Write_Model.Save_model("./models/1",model)
 
 def plot(history):
     plt.plot(history.history['accuracy'], label='Train Accuracy')
