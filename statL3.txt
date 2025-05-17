@@ -1,0 +1,64 @@
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 138s 76ms/step - accuracy: 0.0353 - loss: 468.6976 - val_accuracy: 0.0345 - val_loss: 3.3685
+Epoch 2/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 111s 68ms/step - accuracy: 0.0327 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 3/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0338 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 4/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 109s 67ms/step - accuracy: 0.0328 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 5/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0326 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 6/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 110s 67ms/step - accuracy: 0.0329 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3689
+Epoch 7/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0334 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 8/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0334 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3686
+Epoch 9/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0338 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 10/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0330 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3689
+Epoch 11/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 110s 68ms/step - accuracy: 0.0332 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 12/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0342 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 13/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0328 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 14/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0343 - loss: 3.3696 - val_accuracy: 0.0345 - val_loss: 3.3691
+Epoch 15/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 111s 68ms/step - accuracy: 0.0337 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 16/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 111s 68ms/step - accuracy: 0.0330 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 17/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 115s 70ms/step - accuracy: 0.0333 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3686
+Epoch 18/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0325 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3689
+Epoch 19/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0336 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3690
+Epoch 20/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0345 - loss: 3.3696 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 21/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0328 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 22/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0330 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 23/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0345 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 24/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3686
+Epoch 25/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 111s 68ms/step - accuracy: 0.0342 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 26/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 111s 68ms/step - accuracy: 0.0341 - loss: 3.3699 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 27/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 108s 66ms/step - accuracy: 0.0321 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 28/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 106s 65ms/step - accuracy: 0.0339 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3688
+Epoch 29/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 105s 64ms/step - accuracy: 0.0341 - loss: 3.3697 - val_accuracy: 0.0345 - val_loss: 3.3687
+Epoch 30/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 106s 65ms/step - accuracy: 0.0333 - loss: 3.3698 - val_accuracy: 0.0345 - val_loss: 3.3687
+
+
+5C3D
+32p, 64p, 128p, 128, 256p, 3000, 29
+0.01

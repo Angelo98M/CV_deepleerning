@@ -1,0 +1,64 @@
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 115s 64ms/step - accuracy: 0.0344 - loss: 831332.5000 - val_accuracy: 0.0345 - val_loss: 3.3949
+Epoch 2/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 95s 58ms/step - accuracy: 0.0323 - loss: 3.3922 - val_accuracy: 0.0345 - val_loss: 3.3965
+Epoch 3/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 94s 57ms/step - accuracy: 0.0332 - loss: 3.3914 - val_accuracy: 0.0345 - val_loss: 3.3906
+Epoch 4/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 92s 56ms/step - accuracy: 0.0318 - loss: 3.3920 - val_accuracy: 0.0345 - val_loss: 3.3930
+Epoch 5/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0333 - loss: 3.3923 - val_accuracy: 0.0345 - val_loss: 3.3890
+Epoch 6/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0343 - loss: 3.3919 - val_accuracy: 0.0345 - val_loss: 3.3941
+Epoch 7/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 92s 56ms/step - accuracy: 0.0346 - loss: 3.3918 - val_accuracy: 0.0345 - val_loss: 3.3986
+Epoch 8/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 92s 56ms/step - accuracy: 0.0338 - loss: 3.3915 - val_accuracy: 0.0345 - val_loss: 3.3935
+Epoch 9/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 92s 57ms/step - accuracy: 0.0344 - loss: 3.3922 - val_accuracy: 0.0345 - val_loss: 3.3914
+Epoch 10/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 94s 58ms/step - accuracy: 0.0329 - loss: 3.3917 - val_accuracy: 0.0345 - val_loss: 3.3915
+Epoch 11/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0338 - loss: 3.3911 - val_accuracy: 0.0345 - val_loss: 3.3962
+Epoch 12/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 94s 57ms/step - accuracy: 0.0330 - loss: 3.3918 - val_accuracy: 0.0345 - val_loss: 3.3952
+Epoch 13/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 92s 56ms/step - accuracy: 0.0349 - loss: 3.3921 - val_accuracy: 0.0345 - val_loss: 3.3987
+Epoch 14/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0330 - loss: 3.3928 - val_accuracy: 0.0345 - val_loss: 3.3921
+Epoch 15/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0337 - loss: 3.3909 - val_accuracy: 0.0345 - val_loss: 3.3945
+Epoch 16/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 94s 57ms/step - accuracy: 0.0338 - loss: 3.3922 - val_accuracy: 0.0345 - val_loss: 3.3948
+Epoch 17/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0350 - loss: 3.3910 - val_accuracy: 0.0345 - val_loss: 3.3875
+Epoch 18/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 94s 57ms/step - accuracy: 0.0349 - loss: 3.3918 - val_accuracy: 0.0345 - val_loss: 3.3910
+Epoch 19/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0338 - loss: 3.3925 - val_accuracy: 0.0345 - val_loss: 3.3871
+Epoch 20/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0347 - loss: 3.3910 - val_accuracy: 0.0345 - val_loss: 3.3922
+Epoch 21/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0338 - loss: 3.3917 - val_accuracy: 0.0345 - val_loss: 3.3896
+Epoch 22/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0350 - loss: 3.3931 - val_accuracy: 0.0345 - val_loss: 3.3956
+Epoch 23/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0340 - loss: 3.3931 - val_accuracy: 0.0345 - val_loss: 3.3955
+Epoch 24/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0326 - loss: 3.3922 - val_accuracy: 0.0345 - val_loss: 3.3882
+Epoch 25/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0326 - loss: 3.3917 - val_accuracy: 0.0345 - val_loss: 3.3910
+Epoch 26/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0344 - loss: 3.3910 - val_accuracy: 0.0345 - val_loss: 3.3924
+Epoch 27/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0323 - loss: 3.3930 - val_accuracy: 0.0345 - val_loss: 3.3871
+Epoch 28/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0332 - loss: 3.3909 - val_accuracy: 0.0345 - val_loss: 3.3869
+Epoch 29/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0333 - loss: 3.3924 - val_accuracy: 0.0345 - val_loss: 3.3934
+Epoch 30/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 93s 57ms/step - accuracy: 0.0319 - loss: 3.3914 - val_accuracy: 0.0345 - val_loss: 3.3917
+
+
+5C2D
+8p, 12, 20p, 28, 40p, 3000, 29
+0.1

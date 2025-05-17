@@ -1,0 +1,64 @@
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 136s 76ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 2/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 3/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 4/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 5/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 6/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0335 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 7/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0338 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 8/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0338 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 9/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0339 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 10/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 11/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 12/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0339 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 13/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 14/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 15/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 16/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 17/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 18/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 19/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 20/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 21/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0335 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 22/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 23/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 24/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 113s 69ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 25/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0336 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 26/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0338 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 27/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 28/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0338 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 29/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 69ms/step - accuracy: 0.0338 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+Epoch 30/30
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 112s 68ms/step - accuracy: 0.0337 - loss: nan - val_accuracy: 0.0345 - val_loss: nan
+
+
+5C3D
+32p, 64p, 128p, 128, 256p, 4000, 4000, 29
+10
