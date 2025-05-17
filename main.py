@@ -15,7 +15,7 @@ def main():
         epochs=30
     )
     plot(history)
-    Read_Write_Model.Save_model("./models/L8.keras",model)
+    Read_Write_Model.Save_model("./models/L11.keras",model)
 
 def plot(history):
     plt.plot(history.history['accuracy'], label='Train Accuracy')
