@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def main():
     (train_ds,val_ds,test_ds) = Load_data.load_data("Data/archive")
-    model = CNN_Generator.generate_Model((200,200,3),5,(2,2),2)
+    model = CNN_Generator.generate_Model((200,200,3),3,(2,2),2)
     model = CNN_Generator.compile_Model(model)
     history = model.fit(
         train_ds,
@@ -15,7 +15,7 @@ def main():
         epochs=30
     )
     plot(history)
-    Read_Write_Model.Save_model("./models/L6.keras",model)
+    Read_Write_Model.Save_model("./models/L8.keras",model)
 
 def plot(history):
     plt.plot(history.history['accuracy'], label='Train Accuracy')
