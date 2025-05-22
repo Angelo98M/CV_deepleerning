@@ -6,17 +6,23 @@ import matplotlib.pyplot as plt
 
 
 def main():
-    (train_ds,val_ds,test_ds) = Load_data.load_data("Data/archive")
-    model = CNN_Generator.generate_Model((200,200,3),3,(2,2),2)
+    #Load data
+    (train_ds,val_ds,test_ds) = Load_data.load_data("Data/archive2")
+    #Create Model
+    model = CNN_Generator.generate_Model((400,400,3),3,(2,2),2)
     model = CNN_Generator.compile_Model(model)
+    #Training
     history = model.fit(
         train_ds,
         validation_data=val_ds,
         epochs=30
     )
+    #Plot the results
     plot(history)
-    Read_Write_Model.Save_model("./models/L11.keras",model)
+    #Save model
+    Read_Write_Model.Save_model("./models/L16.keras",model)
 
+# Plotting that doesn't work
 def plot(history):
     plt.plot(history.history['accuracy'], label='Train Accuracy')
     plt.plot(history.history['val_accuracy'], label='Val Accuracy')
