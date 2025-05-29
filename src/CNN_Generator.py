@@ -40,3 +40,24 @@ def compile_Model(model):
 
     )
     return model
+
+def create_new_model(image_shape):
+    rest = keras.applications.ResNet50(
+        include_top=False,
+        weights="imagenet",
+        input_shape = image_shape,
+        name="restnet50"
+    )
+    for layer in rest.layers:
+        layer.trainable = False
+        
+    
+    model = keras.Sequential()
+    model.add(rest)
+    #model.add(keras.layers.GlobalAvgPool2D())
+    model.add(keras.layers.Flatten())
+    model.add(keras.layers.Dense(units=256,activation="relu"))
+    model.add(keras.layers.Dense(units=128,activation="relu"))
+    model.add(keras.layers.Dense(units=29,activation="softmax"))
+
+    return model

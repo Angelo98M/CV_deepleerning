@@ -1,5 +1,4 @@
 import keras
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 data=[]
 train=[]
@@ -13,7 +12,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(400, 400),
+        image_size=(224, 224),
         shuffle=True,
         seed=None,
         validation_split=None,
@@ -33,7 +32,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(400, 400),
+        image_size=(224, 224),
         shuffle=True,
         seed=None,
         validation_split=None,
@@ -53,7 +52,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(400, 224),
+        image_size=(224, 224),
         shuffle=True,
         seed=None,
         validation_split=None,
