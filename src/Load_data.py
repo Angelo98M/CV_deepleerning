@@ -4,7 +4,7 @@ data=[]
 train=[]
 val=[]
 
-def load_data(path):
+def load_data(path, shape=(224, 224)):
     train_ds = keras.utils.image_dataset_from_directory( 
         directory= path+"/train",
         labels= "inferred",
@@ -12,7 +12,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(224, 224),
+        image_size=shape,
         shuffle=True,
         seed=None,
         validation_split=None,
@@ -32,7 +32,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(224, 224),
+        image_size=shape,
         shuffle=True,
         seed=None,
         validation_split=None,
@@ -52,7 +52,7 @@ def load_data(path):
         class_names= None,
         color_mode="rgb",
         batch_size=32,
-        image_size=(224, 224),
+        image_size=shape,
         shuffle=True,
         seed=None,
         validation_split=None,
