@@ -1,0 +1,21 @@
+Epoch 1/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 313s 183ms/step - accuracy: 0.2853 - loss: 2.6113 - val_accuracy: 0.7442 - val_loss: 0.7792
+Epoch 2/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 315s 182ms/step - accuracy: 0.6023 - loss: 1.2949 - val_accuracy: 0.8226 - val_loss: 0.5450
+Epoch 3/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 295s 181ms/step - accuracy: 0.6720 - loss: 1.0492 - val_accuracy: 0.8371 - val_loss: 0.4948
+Epoch 4/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 322s 181ms/step - accuracy: 0.7182 - loss: 0.9086 - val_accuracy: 0.8561 - val_loss: 0.4309
+Epoch 5/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 322s 181ms/step - accuracy: 0.7401 - loss: 0.8292 - val_accuracy: 0.8720 - val_loss: 0.3847
+Epoch 6/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 321s 181ms/step - accuracy: 0.7605 - loss: 0.7766 - val_accuracy: 0.8887 - val_loss: 0.3410
+Epoch 7/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 323s 181ms/step - accuracy: 0.7658 - loss: 0.7377 - val_accuracy: 0.8763 - val_loss: 0.3748
+Epoch 8/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 319s 180ms/step - accuracy: 0.7790 - loss: 0.6992 - val_accuracy: 0.8863 - val_loss: 0.3480
+Epoch 9/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 321s 179ms/step - accuracy: 0.7879 - loss: 0.6737 - val_accuracy: 0.8889 - val_loss: 0.3390
+Epoch 10/10
+1632/1632 ━━━━━━━━━━━━━━━━━━━━ 271s 166ms/step - accuracy: 0.7948 - loss: 0.6391 - val_accuracy: 0.8959 - val_loss: 0.3256
+<keras.src.callbacks.history.History at 0x7b9ed0279c90>
