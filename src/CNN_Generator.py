@@ -34,7 +34,7 @@ def generate_Model(inputShape,filter_size,pool_size,pool_stride):
 #lazy wrapper for compiling
 def compile_Model(model):
     model.compile(
-        optimizer=keras.optimizers.Adam(1e-4),
+        optimizer=keras.optimizers.Adam(1e-5),
         loss=keras.losses.sparse_categorical_crossentropy,
         metrics=["accuracy"],
 
@@ -56,8 +56,10 @@ def create_new_model(image_shape):
     model.add(rest)
     #model.add(keras.layers.GlobalAvgPool2D())
     model.add(keras.layers.Flatten())
-    model.add(keras.layers.Dense(units=256,activation="relu"))
-    model.add(keras.layers.Dense(units=128,activation="relu"))
+    model.add(keras.layers.Dense(units=512,activation="relu"))
+    model.add(keras.layers.Dropout(0.8))
+    model.add(keras.layers.Dense(units=512,activation="relu"))
+    model.add(keras.layers.Dropout(0.5))
     model.add(keras.layers.Dense(units=29,activation="softmax"))
 
     return model

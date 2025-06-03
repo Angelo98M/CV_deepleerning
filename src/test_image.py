@@ -3,11 +3,11 @@ import keras
 import numpy as np
 
 def main():
-    shape_template = (60, 60)
+    shape_template = (200, 200)
     #Load model
-    model = Read_Write_Model.Load_model("./models/LT2.keras")
+    model = Read_Write_Model.Load_model("./models/LT5.keras")
     #Load single image
-    img = keras.utils.load_img("./Data/k.jpg", target_size=shape_template)
+    img = keras.utils.load_img("./Data/k2.jpg", target_size=shape_template)
     # img = keras.utils.load_img("./Data/archive/test/V_test.jpg", target_size=(200,200))
 
     #Convert image to numpy array

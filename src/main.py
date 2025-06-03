@@ -31,7 +31,7 @@ def main():
 #     plt.legend()
 #     plt.show()
 
-    shape_template = (60, 60)
+    shape_template = (200, 200)
     input_shape = (shape_template[0], shape_template[1], 3)
     (train_ds,val_ds,test_ds) = Load_data.load_data("Data/archive2", shape_template)
     model = CNN_Generator.create_new_model(input_shape)
@@ -41,7 +41,7 @@ def main():
         validation_data=val_ds,
         epochs=15
     )
-    Read_Write_Model.Save_model("./models/LT2.keras",model)
+    Read_Write_Model.Save_model("./models/LT5.keras",model)
     print(model.summary())
 
 main()
