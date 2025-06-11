@@ -3,8 +3,6 @@ import Load_data
 import Read_Write_Model
 import matplotlib.pyplot as plt
 
-
-
 def main():
 #     #Load data
 #     (train_ds,val_ds,test_ds) = Load_data.load_data("Data/archive2")
@@ -41,7 +39,7 @@ def main():
         validation_data=val_ds,
         epochs=15
     )
-    Read_Write_Model.Save_model("./models/LT5.keras",model)
+    Read_Write_Model.Save_model("./models/LT10.keras",model)
     print(model.summary())
 
 main()

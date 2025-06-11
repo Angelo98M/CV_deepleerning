@@ -1,0 +1,82 @@
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 308s 115ms/step - accuracy: 0.1213 - loss: 3.3208 - val_accuracy: 0.8057 - val_loss: 1.2813
+Epoch 2/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.4684 - loss: 1.8023 - val_accuracy: 0.9257 - val_loss: 0.5044
+Epoch 3/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.6411 - loss: 1.1644 - val_accuracy: 0.9539 - val_loss: 0.2609
+Epoch 4/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.7346 - loss: 0.8516 - val_accuracy: 0.9702 - val_loss: 0.1626
+Epoch 5/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 110ms/step - accuracy: 0.7927 - loss: 0.6590 - val_accuracy: 0.9776 - val_loss: 0.1155
+Epoch 6/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 110ms/step - accuracy: 0.8274 - loss: 0.5526 - val_accuracy: 0.9819 - val_loss: 0.0884
+Epoch 7/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.8496 - loss: 0.4766 - val_accuracy: 0.9858 - val_loss: 0.0719
+Epoch 8/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.8660 - loss: 0.4164 - val_accuracy: 0.9874 - val_loss: 0.0619
+Epoch 9/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.8817 - loss: 0.3705 - val_accuracy: 0.9897 - val_loss: 0.0492
+Epoch 10/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.8921 - loss: 0.3363 - val_accuracy: 0.9905 - val_loss: 0.0443
+Epoch 11/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.9015 - loss: 0.3054 - val_accuracy: 0.9914 - val_loss: 0.0408
+Epoch 12/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.9050 - loss: 0.2917 - val_accuracy: 0.9925 - val_loss: 0.0341
+Epoch 13/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9137 - loss: 0.2725 - val_accuracy: 0.9925 - val_loss: 0.0329
+Epoch 14/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9182 - loss: 0.2567 - val_accuracy: 0.9943 - val_loss: 0.0289
+Epoch 15/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9243 - loss: 0.2343 - val_accuracy: 0.9941 - val_loss: 0.0272
+Epoch 16/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9280 - loss: 0.2235 - val_accuracy: 0.9936 - val_loss: 0.0261
+Epoch 17/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9321 - loss: 0.2113 - val_accuracy: 0.9943 - val_loss: 0.0238
+Epoch 18/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9354 - loss: 0.1987 - val_accuracy: 0.9949 - val_loss: 0.0226
+Epoch 19/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 283s 109ms/step - accuracy: 0.9389 - loss: 0.1914 - val_accuracy: 0.9946 - val_loss: 0.0208
+Epoch 20/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9403 - loss: 0.1855 - val_accuracy: 0.9950 - val_loss: 0.0203
+Epoch 21/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 284s 109ms/step - accuracy: 0.9404 - loss: 0.1859 - val_accuracy: 0.9952 - val_loss: 0.0196
+Epoch 22/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 285s 110ms/step - accuracy: 0.9441 - loss: 0.1742 - val_accuracy: 0.9953 - val_loss: 0.0183
+Epoch 23/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 285s 110ms/step - accuracy: 0.9487 - loss: 0.1646 - val_accuracy: 0.9956 - val_loss: 0.0185
+Epoch 24/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 285s 110ms/step - accuracy: 0.9489 - loss: 0.1644 - val_accuracy: 0.9958 - val_loss: 0.0165
+Epoch 25/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 286s 110ms/step - accuracy: 0.9499 - loss: 0.1589 - val_accuracy: 0.9956 - val_loss: 0.0165
+Epoch 26/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 286s 110ms/step - accuracy: 0.9522 - loss: 0.1535 - val_accuracy: 0.9956 - val_loss: 0.0166
+Epoch 27/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 285s 110ms/step - accuracy: 0.9531 - loss: 0.1469 - val_accuracy: 0.9953 - val_loss: 0.0175
+Epoch 28/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 287s 111ms/step - accuracy: 0.9520 - loss: 0.1537 - val_accuracy: 0.9953 - val_loss: 0.0172
+Epoch 29/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 288s 111ms/step - accuracy: 0.9561 - loss: 0.1430 - val_accuracy: 0.9956 - val_loss: 0.0158
+Epoch 30/30
+2591/2591 ━━━━━━━━━━━━━━━━━━━━ 287s 111ms/step - accuracy: 0.9566 - loss: 0.1412 - val_accuracy: 0.9957 - val_loss: 0.0160
+Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ restnet50 (Functional)               │ (None, 7, 7, 2048)          │      23,587,712 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ flatten (Flatten)                    │ (None, 100352)              │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 512)                 │      51,380,736 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 512)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 2048)                │       1,050,624 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 2048)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_2 (Dense)                      │ (None, 29)                  │          59,421 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 181,060,057 (690.69 MB)
+ Trainable params: 52,490,781 (200.24 MB)
+ Non-trainable params: 23,587,712 (89.98 MB)
+ Optimizer params: 104,981,564 (400.47 MB)
+None

@@ -58,8 +58,8 @@ def create_new_model(image_shape):
     model.add(keras.layers.Flatten())
     model.add(keras.layers.Dense(units=512,activation="relu"))
     model.add(keras.layers.Dropout(0.8))
-    model.add(keras.layers.Dense(units=512,activation="relu"))
-    model.add(keras.layers.Dropout(0.5))
+    model.add(keras.layers.Dense(units=4096,activation="relu"))
+    model.add(keras.layers.Dropout(0.7))
     model.add(keras.layers.Dense(units=29,activation="softmax"))
 
     return model
