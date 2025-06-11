@@ -19,7 +19,7 @@ def create_confusion_matrix(model, dataset):
 
 def main():
     shape_template = (200, 200)
-    model = Read_Write_Model.Load_model("./models/LT10.keras")
+    model = Read_Write_Model.Load_model("./models/LT12.keras")
     dataset = Load_data.load_test_data("Data/archive2", shape_template)
     cm = create_confusion_matrix(model, dataset)
     sns.heatmap(cm, annot=True, fmt='d', yticklabels=LABELS, xticklabels=LABELS)
