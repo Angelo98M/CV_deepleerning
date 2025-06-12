@@ -8,6 +8,16 @@ LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
 
 # Test a singel Predict given Image wiht given Model
 def test_image(path, model):
+    """
+    Prints out the path and the predicted value
+
+    Parameters:
+        path: string
+            path to the image to be tested
+        model: keras.model
+            the model that shall make the predictions
+    """
+
     shape_template = (200, 200)
     #Load single image
     img = keras.utils.load_img(path, target_size=shape_template)
@@ -25,6 +35,8 @@ def test_image(path, model):
 def main():
     #Load model
     model = Read_Write_Model.Load_model("./models/LT12.keras")
+
+    # Predicts a bunch of images that do not belong to the dataset at once
     for file in listdir("./Data/"):
         if isdir(join("./Data/", file)): continue
         test_image(join("./Data/", file), model)
