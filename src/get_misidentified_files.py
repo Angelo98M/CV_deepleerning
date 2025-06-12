@@ -9,6 +9,19 @@ LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", 
 
 # A Function that returns all Wronge identifide Images form the Dataset
 def test_image_identification(path, model, label):
+    """
+    Prints out the path and the predicted value of misidentified images
+
+    Parameters:
+        path: string
+            path to the image to be tested
+        model: keras.model
+            the model that shall make the predictions
+        label: string
+            expected label
+    """
+
+
     shape_template = (200, 200)
     #Load single image
     img = keras.utils.load_img(path, target_size=shape_template)
