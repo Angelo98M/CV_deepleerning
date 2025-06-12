@@ -6,6 +6,8 @@ from os.path import isdir, join
 
 LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "del", "nothing", "space"]
 
+
+# A Function that returns all Wronge identifide Images form the Dataset
 def test_image_identification(path, model, label):
     shape_template = (200, 200)
     #Load single image

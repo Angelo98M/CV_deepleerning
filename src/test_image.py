@@ -6,6 +6,7 @@ from os.path import isdir, join
 
 LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "del", "nothing", "space"]
 
+# Test a singel Predict given Image wiht given Model
 def test_image(path, model):
     shape_template = (200, 200)
     #Load single image

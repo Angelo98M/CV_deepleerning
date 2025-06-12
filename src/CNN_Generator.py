@@ -1,6 +1,6 @@
 import keras
 
-
+# Generate a CNN Model Whit 6 Conv Layers 16,32,64,128,256 and 4 Dens Layers 256,128,64,29
 def generate_Model(inputShape,filter_size,pool_size,pool_stride):
     insert = keras.layers.Input(shape=(inputShape[0],inputShape[1],inputShape[2]))
     output=0
@@ -40,7 +40,7 @@ def compile_Model(model):
 
     )
     return model
-
+# Create a new CNN Model Wiht ResNet50 base 3 Dens layer 512, 4096, 29 
 def create_new_model(image_shape):
     rest = keras.applications.ResNet50(
         include_top=False,
@@ -64,6 +64,7 @@ def create_new_model(image_shape):
 
     return model
 
+# Create a new CNN Model Wiht ResNet101 base Agumentation 4 Dens layer 512, 1024, 2048, 29 
 def create_new_model_v2(image_shape):
     rest = keras.applications.ResNet101(
         include_top=False,

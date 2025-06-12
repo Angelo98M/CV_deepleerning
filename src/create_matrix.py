@@ -7,6 +7,8 @@ import seaborn as sns
 
 LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "del", "nothing", "space"]
 
+
+# Creates a KonfiusinMatrx for a given Model and a Given Dataset
 def create_predictions(model, dataset):
     y_pred_labels = np.array([])
     y_true = np.array([])

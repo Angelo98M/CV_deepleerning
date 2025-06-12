@@ -1,5 +1,6 @@
 import keras
 
+# Load trainings-, Valadation- and Test datasets form given Path
 def load_data(path, shape=(224, 224)):
     train_ds = keras.utils.image_dataset_from_directory( 
         directory= path+"/train",
@@ -63,7 +64,8 @@ def load_data(path, shape=(224, 224)):
     )
 
     return train_ds, val_ds,test_ds
-    
+   
+#Load Only Trainigns Data form given path 
 def load_train_data(path, shape=(224, 224)):
     dataset = keras.utils.image_dataset_from_directory( 
         directory= path+"/train",
@@ -86,6 +88,7 @@ def load_train_data(path, shape=(224, 224)):
     )
     return dataset
 
+#Load Only Validation Data form given path 
 def load_validation_data(path, shape=(224, 224)):
     dataset = keras.utils.image_dataset_from_directory( 
         directory= path+"/validation",
@@ -108,6 +111,7 @@ def load_validation_data(path, shape=(224, 224)):
     )
     return dataset
 
+#Load Only Test Data form given path 
 def load_test_data(path, shape=(224, 224)):
     dataset = keras.utils.image_dataset_from_directory( 
         directory= path+"/test",
