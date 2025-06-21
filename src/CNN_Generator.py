@@ -27,24 +27,9 @@ def generate_Model(inputShape,filter_size,pool_size,pool_stride):
     #Conv Layer 2
     output = keras.layers.Conv2D(32,kernel_size=filter_size,activation="relu")(output)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
-    # Conv Layer 3
-    output = keras.layers.Conv2D(64,kernel_size=filter_size,activation="relu")(output)
-    output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
-    #Conv Layer 4
-    output = keras.layers.Conv2D(128,kernel_size=filter_size,activation="relu")(output)
-    output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
-    # Conv Layer 5
-    output = keras.layers.Conv2D(256,kernel_size=filter_size,activation="relu")(output)
-    output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     
     output = keras.layers.Flatten()(output)
     #Dense Layer 1
-    output = keras.layers.Dense(units=256,activation="relu")(output)
-    #Dense Layer 2
-    output = keras.layers.Dense(units=128,activation="relu")(output)
-    #Dense Layer 3
-    output = keras.layers.Dense(units=64,activation="relu")(output)
-    #Dense Layer 4
     output = keras.layers.Dense(29,activation="softmax")(output)
     return keras.Model(insert,output)
 
@@ -68,6 +53,7 @@ def compile_Model(model):
 
     )
     return model
+
 # Create a new CNN Model Wiht ResNet50 base 3 Dens layer 512, 4096, 29 
 def create_new_model(image_shape):
     """

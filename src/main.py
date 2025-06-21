@@ -2,6 +2,8 @@ import CNN_Generator
 import Load_data
 import Read_Write_Model
 import matplotlib.pyplot as plt
+from disitillation import Distiller as Distiller
+from disitillation import compile_Distiller as compile_Distiller
 
 # Train custom model
 def custom_model():
@@ -56,9 +58,40 @@ def transfer_learning():
     # Model description
     print(model.summary())
 
+#Knowledge distillation
+def knowledge_distillation():
+    # shape for the images
+    shape_template = (200, 200)
+    input_shape = (shape_template[0], shape_template[1], 3)
+
+    # Load dataset
+    train_ds = Load_data.load_train_data("Data/archive2", shape_template)
+    val_ds = Load_data.load_validation_data("Data/archive2", shape_template)
+
+    # Create model
+    student = CNN_Generator.generate_Model(input_shape,3,(2,2),2)
+    teacher = Read_Write_Model.Load_model("./models/LT12.keras")
+    teacher.trainable = False
+    distiller = Distiller(student=student, teacher=teacher)
+    distiller = compile_Distiller(distiller)
+
+    # Train model
+    _ = distiller.fit(
+        train_ds,
+        validation_data=val_ds,
+        epochs=10,
+    )
+
+    # Save model
+    Read_Write_Model.Save_model("./models/LD2.keras", distiller.student)
+
+    # Model description
+    print(distiller.student.summary())
+
+
 # calls whatever is to be executed
 def main():
-    transfer_learning()
+    knowledge_distillation()
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 import keras
 
 # Load trainings-, Valadation- and Test datasets form given Path
-def load_data(path, shape=(224, 224)):
+def load_data(path, shape=(224, 224), batch_size=32):
     """
     Loads dataset from path
 
@@ -21,7 +21,7 @@ def load_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
@@ -41,7 +41,7 @@ def load_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
@@ -61,7 +61,7 @@ def load_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
@@ -79,7 +79,7 @@ def load_data(path, shape=(224, 224)):
     return train_ds, val_ds,test_ds
    
 #Load Only Trainigns Data form given path 
-def load_train_data(path, shape=(224, 224)):
+def load_train_data(path, shape=(224, 224), batch_size=32):
     """
     Loads dataset from path
 
@@ -99,7 +99,7 @@ def load_train_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
@@ -115,7 +115,7 @@ def load_train_data(path, shape=(224, 224)):
     return dataset
 
 #Load Only Validation Data form given path 
-def load_validation_data(path, shape=(224, 224)):
+def load_validation_data(path, shape=(224, 224), batch_size=32):
     """
     Loads dataset from path
 
@@ -135,7 +135,7 @@ def load_validation_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
@@ -151,7 +151,7 @@ def load_validation_data(path, shape=(224, 224)):
     return dataset
 
 #Load Only Test Data form given path 
-def load_test_data(path, shape=(224, 224)):
+def load_test_data(path, shape=(224, 224), batch_size=32):
     """
     Loads dataset from path
 
@@ -171,7 +171,7 @@ def load_test_data(path, shape=(224, 224)):
         label_mode = "int",
         class_names= None,
         color_mode="rgb",
-        batch_size=32,
+        batch_size=batch_size,
         image_size=shape,
         shuffle=True,
         seed=None,
