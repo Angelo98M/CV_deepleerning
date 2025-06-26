@@ -131,11 +131,11 @@ def compile_Distiller(distiller):
     compiles Distillers
 
     Parameters:
-        model: keras.model
-            model to be compiled
+        distiller: Distiller
+            distiller to be compiled
 
     Returns:
-        the compiled model
+        the compiled distiller
     """
 
     distiller.compile(
@@ -144,6 +144,7 @@ def compile_Distiller(distiller):
         distillation_loss_fn=keras.losses.KLDivergence(),
         metrics=["accuracy"],
         alpha=1e-5,
+        temperature=10,
     )
     return distiller
 
@@ -153,11 +154,11 @@ def compile_Distiller2(distiller):
     compiles Distillers
 
     Parameters:
-        model: keras.model
-            model to be compiled
+        distiller: Distiller2
+            distiller to be compiled
 
     Returns:
-        the compiled model
+        the compiled distiller
     """
 
     distiller.compile(
