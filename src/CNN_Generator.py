@@ -1,38 +1,57 @@
 import keras
 
-
+# Generate a CNN Model Whit 6 Conv Layers 16,32,64,128,256 and 4 Dens Layers 256,128,64,29
 def generate_Model(inputShape,filter_size,pool_size,pool_stride):
+    """
+    creates a custom model
+
+    Parameters:
+        inputShape: tuple
+            inputShape of the model
+        filter_size: tuple
+            used as kernel_size in convulutional layers
+        pool_size: tuple
+            used as pool_size during maxpooling
+        pool_stride: int
+            used as strides during maxpooling
+
+    Returns:
+        a new model
+    """
+
     insert = keras.layers.Input(shape=(inputShape[0],inputShape[1],inputShape[2]))
     output=0
     # Conv Layer 1
-    output = keras.layers.Conv2D(16,kernel_size=filter_size,activation="relu")(insert)
+    output = keras.layers.Conv2D(8,kernel_size=filter_size,activation="relu")(insert)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     #Conv Layer 2
-    output = keras.layers.Conv2D(32,kernel_size=filter_size,activation="relu")(output)
+    output = keras.layers.Conv2D(16,kernel_size=filter_size,activation="relu")(output)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
-    # Conv Layer 3
-    output = keras.layers.Conv2D(64,kernel_size=filter_size,activation="relu")(output)
+    #Conv Layer 3
+    output = keras.layers.Conv2D(16,kernel_size=filter_size,activation="relu")(output)
     output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     #Conv Layer 4
-    output = keras.layers.Conv2D(128,kernel_size=filter_size,activation="relu")(output)
-    output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
-    # Conv Layer 5
-    output = keras.layers.Conv2D(256,kernel_size=filter_size,activation="relu")(output)
-    output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
+    # output = keras.layers.Conv2D(128,kernel_size=filter_size,activation="relu")(output)
+    # output = keras.layers.MaxPool2D(pool_size=pool_size,strides=pool_stride)(output)
     
     output = keras.layers.Flatten()(output)
     #Dense Layer 1
-    output = keras.layers.Dense(units=256,activation="relu")(output)
-    #Dense Layer 2
-    output = keras.layers.Dense(units=128,activation="relu")(output)
-    #Dense Layer 3
-    output = keras.layers.Dense(units=64,activation="relu")(output)
-    #Dense Layer 4
     output = keras.layers.Dense(29,activation="softmax")(output)
     return keras.Model(insert,output)
 
 #lazy wrapper for compiling
 def compile_Model(model):
+    """
+    compiles models
+
+    Parameters:
+        model: keras.model
+            model to be compiled
+
+    Returns:
+        the compiled model
+    """
+
     model.compile(
         optimizer=keras.optimizers.Adam(1e-5),
         loss=keras.losses.sparse_categorical_crossentropy,
@@ -41,7 +60,19 @@ def compile_Model(model):
     )
     return model
 
+# Create a new CNN Model Wiht ResNet50 base 3 Dens layer 512, 4096, 29 
 def create_new_model(image_shape):
+    """
+    creates new transferlearning model with base ResNet50
+
+    Parameters:
+        image_shape: tuple
+            size of the input
+
+    Returns:
+        a new model
+    """
+
     rest = keras.applications.ResNet50(
         include_top=False,
         weights="imagenet",
@@ -64,7 +95,19 @@ def create_new_model(image_shape):
 
     return model
 
+# Create a new CNN Model Wiht ResNet101 base Agumentation 4 Dens layer 512, 1024, 2048, 29 
 def create_new_model_v2(image_shape):
+    """
+    creates new transferlearning model with base ResNet101
+
+    Parameters:
+        image_shape: tuple
+            size of the input
+
+    Returns:
+        a new model
+    """
+
     rest = keras.applications.ResNet101(
         include_top=False,
         weights="imagenet",

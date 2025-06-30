@@ -6,50 +6,45 @@ from os.path import isdir, join
 
 LABELS = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "del", "nothing", "space"]
 
-# Test a singel Predict given Image wiht given Model
-def test_image(path, model):
+
+# A Function that returns all Wronge identifide Images form the Dataset
+def test_image_identification(path, model, label):
     """
-    Prints out the path and the predicted value
+    Prints out the path and the predicted value of misidentified images
 
     Parameters:
         path: string
             path to the image to be tested
         model: keras.model
             the model that shall make the predictions
+        label: string
+            expected label
     """
 
-    shape_template = (200, 200)
-<<<<<<< HEAD
-    #Load model
-    model = Read_Write_Model.Load_model("./models/v3.keras")
-    #Load single image
-    img = keras.utils.load_img("./Data/C_l.jpg", target_size=shape_template)
-    # img = keras.utils.load_img("./Data/archive/test/V_test.jpg", target_size=(200,200))
 
-=======
+    shape_template = (200, 200)
     #Load single image
     img = keras.utils.load_img(path, target_size=shape_template)
->>>>>>> a13a3434e3f25ca3044e47ef72a69ad3c0bfafcc
     #Convert image to numpy array
     x = keras.utils.img_to_array(img)
     x = np.expand_dims(x, axis=0)
-    print(x.shape)
-
     #Predition
-    pred = model.predict(x)
+    pred = model.predict(x, verbose=0)
     #Representation of the predition
     classes = np.argmax(pred, axis=1)
+    if label == LABELS[classes[0]]: return
     print("(", path, ")\nResult: ", LABELS[classes[0]])
 
 def main():
-    #Load model
     model = Read_Write_Model.Load_model("./models/LT12.keras")
 
-    # Predicts a bunch of images that do not belong to the dataset at once
-    for file in listdir("./Data/"):
-        if isdir(join("./Data/", file)): continue
-        test_image(join("./Data/", file), model)
+    for dir in listdir("./Data/archive2/test/"):
+        dir_path = join("./Data/archive2/test/", dir)
+        if not isdir(dir_path): continue
+        for file in listdir(dir_path):
+            file_path = join(dir_path, file)
+            if isdir(file_path): continue
+            test_image_identification(file_path, model, dir)
 
-    
-
-main()
+if __name__ == "__main__":
+    main()
