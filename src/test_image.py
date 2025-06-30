@@ -5,9 +5,9 @@ import numpy as np
 def main():
     shape_template = (200, 200)
     #Load model
-    model = Read_Write_Model.Load_model("./models/LT10.keras")
+    model = Read_Write_Model.Load_model("./models/v3.keras")
     #Load single image
-    img = keras.utils.load_img("./Data/v.jpg", target_size=shape_template)
+    img = keras.utils.load_img("./Data/C_l.jpg", target_size=shape_template)
     # img = keras.utils.load_img("./Data/archive/test/V_test.jpg", target_size=(200,200))
 
     #Convert image to numpy array
