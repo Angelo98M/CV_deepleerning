@@ -143,7 +143,7 @@ def compile_Distiller(distiller):
         student_loss_fn=keras.losses.sparse_categorical_crossentropy,
         distillation_loss_fn=keras.losses.KLDivergence(),
         metrics=["accuracy"],
-        alpha=1e-5,
+        alpha=1e+0,
         temperature=10,
     )
     return distiller

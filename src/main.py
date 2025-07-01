@@ -83,7 +83,7 @@ def knowledge_distillation():
     )
 
     # Save model
-    Read_Write_Model.Save_model("./models/LD15.keras", distiller.student)
+    Read_Write_Model.Save_model("./models/LD38.keras", distiller.student)
 
     # Model description
     print(distiller.student.summary())
