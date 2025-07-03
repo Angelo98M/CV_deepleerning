@@ -19,17 +19,8 @@ def test_image(path, model):
     """
 
     shape_template = (200, 200)
-<<<<<<< HEAD
-    #Load model
-    model = Read_Write_Model.Load_model("./models/v3.keras")
-    #Load single image
-    img = keras.utils.load_img("./Data/C_l.jpg", target_size=shape_template)
-    # img = keras.utils.load_img("./Data/archive/test/V_test.jpg", target_size=(200,200))
-
-=======
     #Load single image
     img = keras.utils.load_img(path, target_size=shape_template)
->>>>>>> a13a3434e3f25ca3044e47ef72a69ad3c0bfafcc
     #Convert image to numpy array
     x = keras.utils.img_to_array(img)
     x = np.expand_dims(x, axis=0)
@@ -43,7 +34,7 @@ def test_image(path, model):
 
 def main():
     #Load model
-    model = Read_Write_Model.Load_model("./models/LT12.keras")
+    model = Read_Write_Model.Load_model("./models/LD35.keras")
 
     # Predicts a bunch of images that do not belong to the dataset at once
     for file in listdir("./Data/"):

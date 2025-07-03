@@ -34,7 +34,7 @@ def create_predictions(model, dataset):
 def main():
     shape_template = (200, 200)
     # Load everything
-    model = Read_Write_Model.Load_model("./models/LT12.keras")
+    model = Read_Write_Model.Load_model("./models/vergleich.keras")
     dataset = Load_data.load_test_data("Data/archive2", shape_template)
 
     # Predict the values
