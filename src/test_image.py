@@ -34,7 +34,7 @@ def test_image(path, model):
 
 def main():
     #Load model
-    model = Read_Write_Model.Load_model("./models/LD35.keras")
+    model = Read_Write_Model.Load_model("./models/LD38.keras")
 
     # Predicts a bunch of images that do not belong to the dataset at once
     for file in listdir("./Data/"):

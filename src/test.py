@@ -3,9 +3,9 @@ import Read_Write_Model
 
 def main():
     #Load data
-    _,_,test_ds = Load_data.load_data("Data/archive2")
+    test_ds = Load_data.load_test_data("Data/archive3", (200, 200))
     #Load model
-    model = Read_Write_Model.Load_model("./models/L14.keras")
+    model = Read_Write_Model.Load_model("./models/LD38.keras")
 
     #Evaluate the model
     score, acc = model.evaluate(test_ds)

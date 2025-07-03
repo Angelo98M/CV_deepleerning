@@ -73,6 +73,7 @@ def knowledge_distillation():
 
     # Create model
     student = CNN_Generator.generate_Model(input_shape,3,(2,2),2)
+    student = CNN_Generator.compile_Model(student)
     teacher = Read_Write_Model.Load_model("./models/LT12.keras")
     teacher.trainable = False
     distiller = Distiller(student=student, teacher=teacher)
